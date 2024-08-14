@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard - Casino la Fortuna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/customer.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación superior -->
+    <nav class="nav-extended">
+        <div class="nav-wrapper red darken-4">
+            <a href="#!" class="brand-logo center">CASINO LA FORTUNA</a>
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger left">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+        <div class="nav-content center black darken-3">
+            <div class="nav-content black darken-3" style="text-align: left;">
+                <span class="nav-title white-text"><span id="customer-name"></span>, prepárate para vivir momentos inolvidables!</span>
+            </div>
+        </div>
+    </nav>
+    <!-- Menú lateral -->
+<ul id="mobile-menu" class="sidenav sidenav-fixed">
+    <li><a href="#" class="subheader">Menú</a></li>
+    <li><a href="promociones.html"><i class="material-icons">card_giftcard</i>Promociones</a></li>
+    <li><a href="deportes.html"><i class="material-icons">sports_soccer</i>Deportes</a></li>
+    <li><a href="e-sports.html"><i class="material-icons">sports_esports</i>E-sports</a></li>
+    <li><a href="transmision.html"><i class="material-icons">live_tv</i>Transmisión en vivo</a></li>
+    <li><a href="casino.html"><i class="material-icons">casino</i>Casino</a></li>
+    <li><a href="casino_en_vivo.html"><i class="material-icons">videocam</i>Casino en Vivo</a></li>
+    <li><a href="poker.html"><i class="material-icons">local_atm</i>Póker</a></li>
+    <li><a href="bingo.html"><i class="material-icons">monetization_on</i>Bingo</a></li>
+    <li><a href="virtuales.html"><i class="material-icons">local_play</i>Virtuales</a></li>
+    <li><a href="blog.html"><i class="material-icons">chat</i>Blog</a></li>
+    <li><a href="tiendas.html"><i class="material-icons">store</i>Tiendas</a></li>
+    <li><a href="app.html"><i class="material-icons">phone_iphone</i>App Fortuna</a></li>
+    <li><a href="redimir_bono.html"><i class="material-icons">card_membership</i>Redimir Bono</a></li>
+    <li><a href="estadisticas.html"><i class="material-icons">bar_chart</i>Estadísticas</a></li>
+    <li><a href="index.html" class="waves-effect waves-light red darken-1 btn-small">Cerrar sesión</a></li>
+</ul>
+
+<!-- Contenido del Dashboard -->
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <p class="right-align" id="session-time"></p>
+            </div>
+        </div>
+        
+        <!-- Secciones de Juegos -->
+        <div id="games" class="section">
+            <h4 class="center-align">Nuestros Juegos</h4>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/deportivas.png" alt="Sports">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Sports</span>
+                            <p>Juega ahora en la mejor casa de apuestas y siente la pasión de apostar en nuestras ofertas deportivas con las mejores cuotas del mercado.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="deportes.html" class="btn red darken-1">Juega Ya!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/online.png" alt="Casino">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Casino</span>
+                            <p>Diversión y miles de posibilidades de ganar las encuentras en el Casino La Fortuna con el mejor portafolio de juegos de azar de la categoría.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="casino.html" class="btn red darken-1">Juega Ya!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/poker.png" alt="Poker">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Póker</span>
+                            <p>Juega, apuesta y gana en el Póker de La Fortuna, conviértete en un maestro dominando diferentes modalidades que tenemos para ti.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="poker.html" class="btn red darken-1">Juega Ya!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contacto e Iconos de Redes Sociales -->
+        <div class="row">
+            <div class="col s12 m6">
+                <h5 class="center-align">Contáctanos</h5>
+                <div class="contact-info center-align">
+                    <p><i class="material-icons red-text">place</i> Av.6 #5-23 Santiago de Cali</p>
+                    <p><i class="material-icons red-text">phone</i> +573152728882</p>
+                    <p><i class="material-icons red-text">email</i> info@casino_fortuna.com</p>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <h5 class="center-align">Síguenos</h5>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.ficticio" target="_blank" title="Facebook">
+                        <img src="icon/Facebook red.svg" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/company/ficticia" target="_blank" title="LinkedIn">
+                        <img src="icon/LinkedIn_red.svg" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/perfil.ficticio" target="_blank" title="Instagram">
+                        <img src="icon/Instagram_red.svg" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="https://www.twitter.com/perfil_ficticio" target="_blank" title="Twitter">
+                        <img src="icon/Twitter_red.svg" alt="Twitter" class="social-icon">
+                    </a>
+                </div>
+                <div class="fixed-action-btn">
+                    <a href="https://wa.me/573152728882" class="btn-floating btn-large light red darken-1" title="¿Necesitas ayuda?">
+                        <img src="icon/WhatsApp.svg" alt="Chat" class="custom-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Pie de página -->
+<footer class="page-footer red darken-4">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Casino la Fortuna</h5>
+                <p>© 2024 Derechos reservados por Casino la Fortuna - Diseñado por CaliByte <a href="mailto:info@calibyte.com.co">info@calibyte.com.co</a></p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Enlaces</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="politicas.html">Políticas</a></li>
+                    <li><a class="grey-text text-lighten-3" href="terminos.html">Términos y Condiciones</a></li>
+                    <li><a class="grey-text text-lighten-3" href="privacidad.html">Aviso de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Enlaces a los archivos JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/customer_dashboard.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        M.Sidenav.init(document.querySelectorAll('.sidenav'));
+    });
+</script>
+</body>
+</html>

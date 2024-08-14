@@ -1,0 +1,179 @@
+/* Ajuste del margen del contenido principal */
+body main {
+    margin-left: 0; /* Elimina el margen izquierdo en móviles */
+    padding: 10px;
+}
+
+@media (min-width: 992px) {
+    body main {
+        margin-left: 300px; /* Mantén el margen izquierdo en pantallas grandes */
+    }
+}
+
+/* Ajuste para la barra de navegación */
+.nav-wrapper {
+    margin-left: 0; /* Elimina el margen izquierdo en móviles */
+    padding-left: 0px;
+}
+
+@media (min-width: 992px) {
+    .nav-wrapper {
+        margin-left: 300px; /* Mantén el margen izquierdo en pantallas grandes */
+        padding-left: 0px;
+    }
+}
+
+/* Ajuste para la barra de navegación */
+.nav-content {
+    padding-left: 0px;
+}
+
+@media (min-width: 992px) {
+    .nav-content {
+        padding-left: 160px; /* Mantén el margen izquierdo en pantallas grandes */
+    }
+}
+
+/* Estilos para centrar el logotipo y aplicar la fuente */
+.brand-logo {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.786);
+    font-weight: bold;
+    color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    width: 100%; /* Usa el 100% del ancho disponible */
+    max-width: 1200px; /* Define un ancho máximo para pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Ajuste para el pie de página */
+.page-footer {
+    margin-left: 0; /* Elimina el margen izquierdo en móviles */
+}
+
+@media (min-width: 992px) {
+    .page-footer {
+        margin-left: 300px; /* Mantén el margen izquierdo en pantallas grandes */
+        padding-left: 0px;
+    }
+}
+
+/* Estilos para la barra lateral con fondo oscuro */
+.sidenav.sidenav-fixed {
+    background-color: rgba(18, 18, 18, 0.9); /* Fondo oscuro semi-transparente */
+    color: #ffffff; /* Texto blanco para la barra lateral */
+}
+
+@media (max-width: 991px) {
+    .sidenav.sidenav-fixed {
+        position: absolute; /* Hacer la barra lateral flotante en móviles */
+        width: 100%; /* Ancho completo en móviles */
+        z-index: 9999; /* Asegura que la barra lateral esté en el frente */
+    }
+}
+
+/* Ajustes para el contenido de la barra lateral */
+.sidenav.sidenav-fixed a, .sidenav.sidenav-fixed .divider, .sidenav.sidenav-fixed .subheader {
+    color: white; /* Color del texto y los íconos en la barra lateral */
+}
+
+/* Estilo para los iconos en la barra lateral */
+.sidenav.sidenav-fixed i.material-icons {
+    color: white; /* Color blanco para los íconos */
+}
+
+/* Estilos para centrar el contenido de las tarjetas */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background-size: cover;
+}
+
+/* Estilos unificados para tarjetas en todas las secciones para evitar repetición */
+.card {
+    background-color: #121212; /* Fondo oscuro para todas las tarjetas */
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 30px;
+    color: #fff; /* Texto blanco para todas las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card-image img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: auto;
+}
+
+#games h4 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #121212;
+    font-family: 'Arial Black', sans-serif;
+}
+
+/* Ajustes para igualar el tamaño de las tarjetas */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+.card-content {
+    flex: 1; /* Permite que el contenido ocupe el espacio disponible */
+}
+
+.card-action {
+    display: flex;
+    justify-content: center; /* Centra el botón de acción */
+    margin-top: auto; /* Empuja el botón hacia la parte inferior */
+}
+
+/* Ajustes para alinear los íconos de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centrar los íconos */
+    gap: 10px; /* Añadir espacio entre los íconos si es necesario */
+    flex-wrap: wrap; /* Permitir que los íconos se ajusten si es necesario */
+    margin-top: 10px; /* Espacio entre el título "Síguenos" y los íconos */
+}
+
+.custom-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    vertical-align: middle;
+    transform: translate(-80%, -80%); /* Centra el icono */
+    position: relative;
+    top: 58%;
+    left: 57%;
+}
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Máquinas Tragamonedas - Casino La Fortuna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <div class="navbar-fixed">
+        <nav class="red">
+            <div class="nav-wrapper red darken-4">
+                <a href="#!" class="brand-logo">CASINO LA FORTUNA</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#"><i class="material-icons">search</i></a></li>
+                    <li><a href="#"><i class="material-icons">view_module</i></a></li>
+                    <li><a href="#"><i class="material-icons">refresh</i></a></li>
+                    <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Barra lateral -->
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view">
+                <a href="#logo"><img class="circle" src="icon/Logo.svg"></a>
+                <a href="#name"><span id="user-name" class="white-text name">Cargando...</span></a>
+                <a href="#email"><span id="user-email" class="white-text email">Cargando...</span></a>
+            </div>
+        </li>
+        <li><a href="index.html"><i class="material-icons">reply_all</i>Inicio</a></li>
+        <li><a href="machine_management.html"><i class="material-icons">casino</i>Máquinas Tragamonedas</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Más Opciones</a></li>
+        <li><a class="waves-effect" href="slot_machines_config.html"><i class="material-icons">settings</i>Configuración</a></li>
+    </ul>
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="row">
+            <div class="col s12">
+                <h2 class="centered-title"> Máquinas Tragamonedas</h2>
+                <div class="row">
+                    <div class="col s12">
+                        <h3>Registro de Datos</h3>
+                        <form>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="machine_number" type="text" class="validate">
+                                    <label for="machine_number">Número de Máquina</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="date" type="text" class="datepicker">
+                                    <label for="date">Fecha</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="coin_in" type="number" class="validate">
+                                    <label for="coin_in">Coin In</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="coin_out" type="number" class="validate">
+                                    <label for="coin_out">Coin Out</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="jackpot" type="number" class="validate">
+                                    <label for="jackpot">Jackpot</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="balance" type="number" class="validate" disabled>
+                                    <label for="balance">Balance</label>
+                                </div>
+                            </div>
+                            <button class="btn waves-effect light red darken-1" type="submit" name="action">Registrar
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <h3>Historial de Registros</h3>
+                        <table class="striped">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Máquina</th>
+                                    <th>Coin In</th>
+                                    <th>Coin Out</th>
+                                    <th>Jackpot</th>
+                                    <th>Balance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2024-05-19</td>
+                                    <td>Máquina 1</td>
+                                    <td>$500.000</td>
+                                    <td>$200.000</td>
+                                    <td>$50.000</td>
+                                    <td>$250.000</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-05-18</td>
+                                    <td>Máquina 2</td>
+                                    <td>$400.000</td>
+                                    <td>$150.000</td>
+                                    <td>$0</td>
+                                    <td>$250.000</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-05-17</td>
+                                    <td>Máquina 3</td>
+                                    <td>$600.000</td>
+                                    <td>$300.000</td>
+                                    <td>$100.000</td>
+                                    <td>$200.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <h3>Balance de Caja Diario</h3>
+                        <table class="striped">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Total Ingresos</th>
+                                    <th>Total Pagos</th>
+                                    <th>Balance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2024-05-19</td>
+                                    <td>$1.500.000</td>
+                                    <td>$550.000</td>
+                                    <td>$950.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="page-footer grey darken-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Casino La Fortuna</h5>
+                    <p class="grey-text text-lighten-4">El mejor lugar para disfrutar de juegos y entretenimiento.</p>
+                </div>
+                <div class="col l4 offset-l2 s12 footer-links">
+                    <h5 class="white-text">Enlaces</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Acerca de Nosotros</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Contáctanos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Términos y Condiciones</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright red darken-4">
+            <div class="container">
+                © 2024 Derechos reservados por Casino la Fortuna - Diseñado por CaliByte <a href="mailto:info@calibyte.com.co">info@calibyte.com.co</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/slot_machines_dashboard.js"></script>
+</body>
+</html>

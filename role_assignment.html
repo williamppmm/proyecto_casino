@@ -1,0 +1,66 @@
+<html lang="es">
+<head>
+    <!-- Metaetiquetas requeridas para la compatibilidad y el diseño responsivo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Carga de hojas de estilo de Materialize y hoja de estilo personalizada -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/administrative.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Título de la página -->
+    <title>Asignación de Roles - Casino la Fortuna</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Asignación de Roles</h2>
+        
+        <!-- Formulario para asignación de roles -->
+        <form id="role-form">
+            <!-- Selección de usuario con lista desplegable -->
+            <div class="input-field col s12">
+                <select id="user-select" name="user">
+                    <option value="" disabled selected>Elija un usuario</option>
+                </select>
+                <label>Usuarios Registrados</label>
+            </div>
+            
+            <!-- Campo de entrada para especificar el cargo -->
+            <div class="input-field">
+                <input id="position" type="text" name="position" required>
+                <label for="position">Cargo</label>
+            </div>
+            
+            <!-- Selector de fecha para la fecha de ingreso -->
+            <div class="input-field">
+                <input type="text" class="datepicker" id="entryDate" name="entryDate" required>
+                <label for="entryDate">Fecha de Ingreso</label>
+            </div>
+            
+            <!-- Selección de departamento con lista desplegable -->
+            <div class="input-field col s12">
+                <select id="department-select" name="department" required>
+                    <option value="" disabled selected>Seleccione un departamento</option>
+                </select>
+                <label>Departamento</label>
+            </div>
+            
+            <!-- Botón para enviar el formulario -->
+            <button type="submit" class="btn waves-effect red">Asignar Rol</button>
+        </form>
+        
+        <!-- Botón para enviar correo, oculto inicialmente -->
+        <a id="email-button" class="btn blue" style="display: none;" href="#" target="_blank">Enviar Correo</a>
+    </div>
+    
+    <!-- Enlace a dashboard para administrador -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="admin_dashboard.html" class="btn-flat">DASHBOARD</a>
+    </div>
+    
+    <!-- Carga de scripts de Materialize y scripts personalizados -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/role_assignment.js"></script>
+</body>
+</html>

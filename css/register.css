@@ -1,0 +1,126 @@
+/* Estilo general de fondo y texto */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para encabezados */
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para etiquetas y botones del formulario */
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=date], select, .datepicker, textarea {
+    background-color: #222;
+    color: #fff;
+    border-bottom: 1px solid #d32f2f;
+}
+
+label {
+    color: #fff;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=date]:focus, select:focus, textarea:focus {
+    border-bottom: 1px solid #d32f2f;
+    box-shadow: 0 1px 0 0 #d32f2f;
+}
+
+input[type=text]::placeholder, input[type=email]::placeholder, input[type=password]::placeholder, input[type=tel]::placeholder, input[type=date]::placeholder, textarea::placeholder {
+    color: #aaa;
+}
+
+select:focus, input:focus + label, .datepicker:focus + label {
+    color: #d32f2f;
+}
+
+select {
+    color: #fff;
+}
+
+.btn {
+    background-color: #d32f2f;
+}
+
+.btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Estilos para checkbox */
+input[type=checkbox].filled-in:checked + span:before {
+    border-right: 2px solid #d32f2f;
+    border-bottom: 2px solid #d32f2f;
+}
+
+/* Estilos para el botón flotante de WhatsApp */
+.fixed-action-btn .btn-floating {
+    background-color: #d32f2f;
+}
+
+/* Estilos del icono personalizado */
+.custom-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    vertical-align: middle;
+    transform: translate(-80%, -80%);
+    position: relative;
+    top: 58%;
+    left: 57%;
+}
+
+/* Enlaces */
+a {
+    color: #d32f2f;
+}
+
+a:hover {
+    color: #b71c1c;
+}
+
+/* Contenedor principal */
+.container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para toggles de contraseña */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+    color: #d32f2f;
+}
+
+/* Estilos para el enlace "Volver al inicio" */
+.return-link {
+    color: #d32f2f;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s;
+}
+
+.return-link:hover {
+    color: #b71c1c;
+}
+
+/* Estilos para el calendario de Materialize */
+
+.datepicker-table td {
+    color: #26a69a !important;
+}
+
+.datepicker-controls .select-month, .datepicker-controls .select-year {
+    background-color: #26a69a !important;
+}
+.datepicker-table td.is-today {
+    color: #fff !important;
+    background-color: #26a69a !important;
+    border-radius: 50% !important;
+}

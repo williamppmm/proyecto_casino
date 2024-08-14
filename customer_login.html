@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Inicio de sesión de clientes - Casino la Fortuna</title>
+</head>
+<body class="customer-login">
+    <div class="container">
+        <h2>Clientes</h2>
+        <form id="customer-login-form">
+            <div class="input-field">
+                <i class="material-icons prefix">email</i>
+                <input type="email" id="customer-username" name="customer-username" required>
+                <label for="customer-username">Correo electrónico</label>
+            </div>
+            <div class="input-field" style="position: relative;">
+                <i class="material-icons prefix">lock</i>
+                <input type="password" id="customer-password" name="customer-password" required>
+                <label for="customer-password">Contraseña</label>
+                <span class="toggle-password">
+                    <i class="material-icons" id="toggle-customer-password-icon">visibility_off</i>
+                </span>
+            </div>
+            <p>
+                <label>
+                    <input type="checkbox" id="remember-me" class="filled-in">
+                    <span>Recordar contraseña</span>
+                </label>
+            </p>
+            <button type="submit" class="btn red">Iniciar sesión</button>
+        </form>
+        <p>¿Olvidaste tu contraseña? <a href="recuperar_contraseña_cliente.html">Aquí</a>.</p>
+        <div style="text-align: center;">
+            <a href="admin_login.html" class="btn red lighten-1">¿Eres administrador?</a>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="index.html" class="btn-flat">Volver al inicio</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/customer_login.js"></script>
+</body>
+</html>

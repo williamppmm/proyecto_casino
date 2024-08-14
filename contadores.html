@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contabilidad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/customer.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <h1>Ingresar Datos de Contabilidad</h1>
+    <form action="procesar_formulario.php" method="post">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br>
+        
+        <label for="maquina">Máquina:</label>
+        <input type="number" id="maquina" name="maquina" required><br>
+
+        <label for="denominacion">Denominación:</label>
+        <input type="text" id="denominacion" name="denominacion" required><br>
+
+        <label for="entrada">Entrada:</label>
+        <input type="number" id="entrada" name="entrada" step="0.01" required><br>
+
+        <label for="salida">Salida:</label>
+        <input type="number" id="salida" name="salida" step="0.01" required><br>
+
+        <label for="jackpot">Jackpot:</label>
+        <input type="number" id="jackpot" name="jackpot" step="0.01" required><br>
+
+        <label for="cancelled">Cancelled:</label>
+        <input type="number" id="cancelled" name="cancelled" step="0.01" required><br>
+
+        <label for="yield">Yield:</label>
+        <input type="number" id="yield" name="yield" step="0.01" required><br>
+
+        <label for="porcentaje">Porcentaje:</label>
+        <input type="number" id="porcentaje" name="porcentaje" step="0.0001" required><br>
+
+        <label for="entradas">Entradas:</label>
+        <input type="number" id="entradas" name="entradas" required><br>
+
+        <label for="saldo">Saldo:</label>
+        <input type="number" id="saldo" name="saldo" step="0.01" required><br>
+
+        <label for="plataformas">Plataformas:</label>
+        <input type="text" id="plataformas" name="plataformas"><br>
+
+        <label for="contadores">Contadores:</label>
+        <input type="text" id="contadores" name="contadores"><br>
+
+        <label for="caja">Caja:</label>
+        <input type="number" id="caja" name="caja" step="0.01" required><br>
+
+        <label for="denominacion_caja">Denominación Caja:</label>
+        <input type="text" id="denominacion_caja" name="denominacion_caja" required><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino la Fortuna</title>
+    <!-- Enlace a hojas de estilo -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sección de héroe -->
+    <section id="hero" class="fullscreen">
+        <div class="hero-content container center-align">
+            <img src="icon/Logo.svg" alt="Casino La Fortuna" class="responsive-img" style="max-width: 400px; margin-bottom: 20px;">
+            <h1>Bienvenido a Casino La Fortuna</h1>
+            <p>Descubre un mundo de emoción y entretenimiento.</p>
+            <a href="customer_register.html" class="btn waves-effect waves-light red darken-2" title="Regístrate ahora">¡Regístrate ahora!</a>
+        </div>
+    </section>
+
+    <!-- Navegación principal -->
+    <nav class="nav-extended">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo center">Casino La Fortuna</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#" data-target="admin-modal" class="modal-trigger" title="Administración"><i class="material-icons">admin_panel_settings</i></a></li>
+                <li><a href="customer_login.html" title="Iniciar sesión"><i class="material-icons">person</i></a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="#inicio">Inicio</a></li>
+                <li class="tab"><a href="#quienes-somos">Quiénes somos</a></li>
+                <li class="tab"><a href="#juegos">Juegos</a></li>
+                <li class="tab"><a href="#promociones">Promociones</a></li>
+                <li class="tab"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal de administración -->
+    <div id="admin-modal" class="modal">
+        <div class="modal-content">
+            <h4>Administración</h4>
+            <ul>
+                <li><a href="admin_login.html">Iniciar sesión como operador</a></li>
+                <li><a href="admin_register.html">Registrar nuevo operador</a></li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close btn red darken-2">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Sección de inicio -->
+    <div id="inicio" class="section">
+        <div class="container">
+            <h2 class="section-header">Inicio</h2>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card dark-background">
+                        <div class="card-image">
+                            <img src="img/IMG_007.png" alt="Casino">
+                        </div>
+                        <div class="card-content">
+                            <h5>Bienvenido a Casino La Fortuna</h5>
+                            <p>Descubre un mundo lleno de emoción y diversión en nuestro casino. ¡Te esperamos!</p>
+                            <a href="customer_register.html" class="btn red darken-2" title="Regístrate">Regístrate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card dark-background">
+                        <div class="card-image">
+                            <img src="img/IMG_010.PNG" alt="Juegos de casino">
+                        </div>
+                        <div class="card-content">
+                            <h5>Variedad de juegos</h5>
+                            <p>Disfruta de una amplia selección de juegos de casino, desde clásicos hasta los más modernos.</p>
+                            <a href="customer_login.html" class="btn red darken-2" title="Ver juegos">Inicia sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de juegos -->
+    <div id="juegos" class="section">
+        <div class="container">
+            <h2 class="section-header">Nuestros Juegos</h2>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="img/deportivas.png" alt="Sports">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Deportivas</span>
+                            <p class="custom-background">Juega ahora, elige tus equipos favoritos en la mejor casa de apuestas y siente la pasión de apostar en nuestras ofertas deportivas con las mejores cuotas del mercado.</p>
+                            <a href="deportes.html" class="btn red darken-1" title="Juega a Sports">Juega Ya!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="img/online.png" alt="Casino">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Casino Online</span>
+                            <p class="custom-background">Diversión y miles de posibilidades de ganar las encuentras en el Casino La Fortuna con el mejor portafolio de juegos de azar de la categoría.</p>
+                            <a href="casino.html" class="btn red darken-1" title="Juega en el Casino">Juega Ya!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="img/poker.png" alt="Poker">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Poker</span>
+                            <p class="custom-background">Juega, apuesta y gana en el Póker de La Fortuna, conviértete en un maestro dominando diferentes modalidades que tenemos para ti.</p>
+                            <a href="poker.html" class="btn red darken-1" title="Juega al Póker">Juega Ya!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de promociones -->
+    <div id="promociones" class="section">
+        <div class="container">
+            <h2 class="section-header">Promociones Exclusivas</h2>
+            <div class="carousel">
+                <a class="carousel-item" href="#promo1!" title="Promoción 1"><img src="img/promo1.png"></a>
+                <a class="carousel-item" href="#promo2!" title="Promoción 2"><img src="img/promo2.png"></a>
+                <a class="carousel-item" href="#promo3!" title="Promoción 3"><img src="img/promo3.png"></a>
+                <a class="carousel-item" href="#promo4!" title="Promoción 4"><img src="img/promo4.png"></a>
+                <a class="carousel-item" href="#promo5!" title="Promoción 5"><img src="img/promo5.png"></a>
+                <a class="carousel-item" href="#promo6!" title="Promoción 6"><img src="img/promo6.png"></a>
+                <a class="carousel-item" href="#promo7!" title="Promoción 7"><img src="img/promo7.png"></a>
+                <a class="carousel-item" href="#promo8!" title="Promoción 8"><img src="img/promo8.png"></a>
+                <a class="carousel-item" href="#promo9!" title="Promoción 9"><img src="img/promo9.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección "Quiénes somos" -->
+    <div id="quienes-somos" class="section">
+        <div class="container">
+            <h2 class="section-header">Quiénes somos</h2>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/Quienes_somos.png" alt="Nuestro equipo" class="responsive-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-content">
+                            <br>
+                            <p>Somos Casino La Fortuna, un lugar donde la emoción y la diversión se unen para brindarte una experiencia única. Nuestro compromiso es ofrecerte un ambiente seguro y confiable para que disfrutes de tus juegos favoritos.</p>
+                            <br>
+                            <p>Contamos con un equipo altamente capacitado y dedicado a garantizar tu satisfacción en todo momento. Nos enorgullece ser un referente en la industria del entretenimiento y estamos en constante búsqueda de nuevas formas de sorprenderte.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de contacto -->
+    <div id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-header">Contáctanos</h2>
+            <div class="row">
+                <div class="col s12 m6">
+                    <form id="contactForm">
+                        <div class="input-field">
+                            <input id="nombre" type="text" class="validate" required>
+                            <label for="nombre">Nombre</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate" required>
+                            <label for="email">Correo electrónico</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="mensaje" class="materialize-textarea validate" required></textarea>
+                            <label for="mensaje">Mensaje</label>
+                        </div>
+                        <button class="btn red darken-2" type="submit" title="Enviar mensaje">Enviar</button>
+                    </form>
+                </div>
+                <div class="col s12 m6">
+                    <div class="contact-info">
+                        <br>
+                        <br>
+                        <p><i class="material-icons">location_on</i>Cl. 12 #4-60, Santiago de Cali</p>
+                        <p><i class="material-icons">phone</i>+57 315 272 8882</p>
+                        <p><i class="material-icons">email</i>info@casinolafortuna.com</p>
+                        <p><i class="material-icons">schedule</i>Lun - Dom: 12:00 PM - 3:00 AM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div id="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15914.081487660663!2d-76.5330951!3d3.4521506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a665d888f715%3A0xa51e56c3783d8c41!2sPlaza%20de%20Cayzedo!5e0!3m2!1ses!2sco!4v1685668817075!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de redes sociales -->
+    <div id="social-section" class="section">
+        <div class="container">
+            <h2 class="section-header">Síguenos en redes sociales</h2>
+            <div class="social-icons-container">
+                <a href="https://www.facebook.com/profile.ficticio" target="_blank" title="Facebook">
+                    <img src="icon/Facebook.svg" alt="Facebook" class="social-icon" style="max-width: 35px; margin-bottom: 20px;">
+                </a>
+                <a href="https://www.linkedin.com/company/ficticia" target="_blank" title="LinkedIn">
+                    <img src="icon/LinkedIn.svg" alt="LinkedIn" class="social-icon" style="max-width: 35px; margin-bottom: 20px;">
+                </a>
+                <a href="https://www.instagram.com/perfil.ficticio" target="_blank" title="Instagram">
+                    <img src="icon/Instagram.svg" alt="Instagram" class="social-icon" style="max-width: 35px; margin-bottom: 20px;">
+                </a>
+                <a href="https://www.twitter.com/perfil_ficticio" target="_blank" title="Twitter">
+                    <img src="icon/Twitter.svg" alt="Twitter" class="social-icon" style="max-width: 35px; margin-bottom: 20px;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Uso de botón flotante para WhatsApp -->
+    <div class="fixed-action-btn">
+        <a href="https://wa.me/573152728882" class="btn-floating btn-large" title="¿Necesitas ayuda? Chatea con nosotros en WhatsApp">
+            <img src="icon/WhatsApp.svg" alt="Chat" class="custom-icon">
+        </a>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2024 Derechos reservados por Casino la Fortuna - Diseñado por CaliByte <a href="mailto:info@calibyte.com.co">info@calibyte.com.co</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

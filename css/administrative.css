@@ -1,0 +1,111 @@
+/* Estilos generales y de fondo */
+body {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #f5f5f5;
+  background-image: url("../img/IMG_007.PNG"); /* Imagen de fondo por defecto */
+}
+
+/* Estilos del contenedor para formularios */
+.container {
+  background-color: rgba(18, 18, 18, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* Estilos para etiquetas y campos de entrada */
+.form-group label,
+.input-field label {
+  color: #ffffff;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+.input-field input {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff !important;
+}
+
+.input-field .prefix {
+  color: #ffffff;
+}
+
+/* Estilos para checkboxes seleccionados */
+input[type="checkbox"].filled-in:checked + span:not(.lever):after {
+  border: 2px solid #b71c1c;
+  background-color: #b71c1c;
+}
+
+/* Estilos para botones y enlaces */
+.btn,
+.btn:hover {
+  background-color: white;
+}
+
+a,
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/* Estilo para el ícono del ojo que muestra/oculta la contraseña */
+.toggle-password {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  padding-right: 10px;
+  z-index: 1;
+}
+
+/* Estilos para las flechas del calendario */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* Ajustes de diseño responsivo para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .container {
+      width: 85%;
+      margin-top: 20px;
+  }
+}
+
+/* Estilos específicos para el datepicker de Materialize */
+.datepicker-controls .select-wrapper input.select-dropdown {
+  color: #000000; /* Texto en negro */
+}
+
+.datepicker-day-button {
+  color: #000 !important; /* Color de los días del calendario en negro */
+}
+
+.datepicker-cancel,
+.datepicker-clear,
+.datepicker-today,
+.datepicker-done {
+  color: #000 !important; /* Color del texto de los botones del calendario en negro */
+}
+
+.datepicker-month,
+.datepicker-year {
+  color: #000 !important; /* Color del mes y año en la cabecera del calendario en negro */
+}
+
+.datepicker-day-button:focus,
+.datepicker-day-button:hover {
+  background-color: #b71c1c !important; /* Fondo rojo oscuro para días seleccionados al pasar el mouse */
+  color: #fff !important; /* Texto en blanco para contraste */
+}

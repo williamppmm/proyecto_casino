@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Cafetería - Casino La Fortuna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <div class="navbar-fixed">
+        <nav class="red">
+            <div class="nav-wrapper red darken-4">
+                <a href="#!" class="brand-logo">CASINO LA FORTUNA</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#"><i class="material-icons">search</i></a></li>
+                    <li><a href="#"><i class="material-icons">view_module</i></a></li>
+                    <li><a href="#"><i class="material-icons">refresh</i></a></li>
+                    <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Barra lateral -->
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view">
+                <a href="#logo"><img class="circle" src="icon/Logo.svg"></a>
+                <a href="#name"><span id="user-name" class="white-text name">Cargando...</span></a>
+                <a href="#email"><span id="user-email" class="white-text email">Cargando...</span></a>
+            </div>
+        </li>
+        <li><a href="index.html"><i class="material-icons">reply_all</i>Inicio</a></li>
+        <li><a href="cafeteria_dashboard.html"><i class="material-icons">local_cafe</i>Cafetería</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Más Opciones</a></li>
+        <li><a class="waves-effect" href="cafeteria_config.html"><i class="material-icons">settings</i>Configuración</a></li>
+    </ul>
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="row">
+            <div class="col s12">
+                <h2 class="centered-title">Cafetería</h2>
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="tabs">
+                            <li class="tab col s4"><a href="#inventory">Inventario</a></li>
+                            <li class="tab col s4"><a href="#inputs">Entradas</a></li>
+                            <li class="tab col s4"><a href="#outputs">Salidas</a></li>
+                        </ul>
+                    </div>
+                    <div id="inventory" class="col s12">
+                        <h3>Inventario Actual</h3>
+                        <table class="striped">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Cantidad</th>
+                                    <th>Unidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Café</td>
+                                    <td>50</td>
+                                    <td>Kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Azúcar</td>
+                                    <td>100</td>
+                                    <td>Kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Leche</td>
+                                    <td>200</td>
+                                    <td>Lt</td>
+                                </tr>
+                                <tr>
+                                    <td>Gaseosas</td>
+                                    <td>500</td>
+                                    <td>Unidades</td>
+                                </tr>
+                                <tr>
+                                    <td>Licores</td>
+                                    <td>200</td>
+                                    <td>Unidades</td>
+                                </tr>
+                                <tr>
+                                    <td>Pasabocas</td>
+                                    <td>1000</td>
+                                    <td>Unidades</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="inputs" class="col s12">
+                        <h3>Registro de Entradas</h3>
+                        <form>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <select id="product">
+                                        <option value="" disabled selected>Seleccione el producto</option>
+                                        <option value="1">Café</option>
+                                        <option value="2">Azúcar</option>
+                                        <option value="3">Leche</option>
+                                        <option value="4">Gaseosas</option>
+                                        <option value="5">Licores</option>
+                                        <option value="6">Pasabocas</option>
+                                    </select>
+                                    <label>Producto</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="quantity" type="number" class="validate">
+                                    <label for="quantity">Cantidad</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="date" type="text" class="datepicker">
+                                    <label for="date">Fecha</label>
+                                </div>
+                            </div>
+                            <button class="btn waves-effect light red darken-1" type="submit" name="action">Registrar Entrada
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </form>
+                    </div>
+                    <div id="outputs" class="col s12">
+                        <h3>Registro de Salidas</h3>
+                        <form>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <select id="product">
+                                        <option value="" disabled selected>Seleccione el producto</option>
+                                        <option value="1">Café</option>
+                                        <option value="2">Azúcar</option>
+                                        <option value="3">Leche</option>
+                                        <option value="4">Gaseosas</option>
+                                        <option value="5">Licores</option>
+                                        <option value="6">Pasabocas</option>
+                                    </select>
+                                    <label>Producto</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="quantity" type="number" class="validate">
+                                    <label for="quantity">Cantidad</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="date" type="text" class="datepicker">
+                                    <label for="date">Fecha</label>
+                                </div>
+                            </div>
+                            <button class="btn waves-effect light red darken-1" type="submit" name="action">Registrar Salida
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="page-footer grey darken-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Casino La Fortuna</h5>
+                    <p class="grey-text text-lighten-4">El mejor lugar para disfrutar de juegos y entretenimiento.</p>
+                </div>
+                <div class="col l4 offset-l2 s12 footer-links">
+                    <h5 class="white-text">Enlaces</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Acerca de Nosotros</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Contáctanos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Términos y Condiciones</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright red darken-4">
+            <div class="container">
+                © 2024 Derechos reservados por Casino la Fortuna - Diseñado por CaliByte <a href="mailto:info@calibyte.com.co">info@calibyte.com.co</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/restaurant_management_dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configuración del Sistema - Casino La Fortuna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Configuración del Perfil</h2>
+        <form id="profile-form" enctype="multipart/form-data" class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="email" id="email" name="email" class="validate">
+                    <label for="email">Correo electrónico</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="password" id="password" name="password" class="validate">
+                    <label for="password">Nueva Contraseña</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="text" id="telefono" name="telefono" class="validate">
+                    <label for="telefono">Teléfono Móvil</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="text" id="direccion" name="direccion" class="validate">
+                    <label for="direccion">Dirección</label>
+                </div>
+            </div>
+            <button type="submit" class="btn">Actualizar Perfil</button>
+        </form>
+        <a href="admin_dashboard.html" class="btn-flat">Volver al Dashboard</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="administrative_sys_config.js"></script>
+</body>
+</html>

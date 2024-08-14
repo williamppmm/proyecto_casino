@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Departamentos y Operadores</title>
+    <!-- Enlace al archivo CSS de Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Enlace al archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Gestión de Departamentos y Autorizaciones</h2>
+
+        <!-- Sección para administrar departamentos -->
+        <div class="section">
+            <h4>Administrar Departamentos</h4>
+            <form id="department-operator-form">
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <!-- Select para seleccionar un departamento -->
+                        <select id="departmentSelect" name="departmentSelect" required>
+                            <option value="" disabled selected>*Selecciona un departamento</option>
+                        </select>
+                        <label for="departmentSelect">Departamento</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <!-- Select para seleccionar una acción -->
+                        <select id="actionSelect" name="actionSelect" required>
+                            <option value="" disabled selected>*Selecciona una acción</option>
+                            <option value="enable">Habilitar</option>
+                            <option value="disable">Deshabilitar</option>
+                            <option value="delete">Eliminar</option>
+                        </select>
+                        <label for="actionSelect">Acción</label>
+                    </div>
+                </div>
+                <div>
+                    <!-- Botón para aplicar la acción seleccionada -->
+                    <button class="btn waves-effect red" type="submit">Aplicar Acción</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Sección para generar códigos de autorización -->
+        <div class="section">
+            <h4>Generar Código de Autorización</h4>
+            <form id="authorization-form">
+                <div class="input-field">
+                    <!-- Campo de texto para la descripción del código de autorización -->
+                    <input type="text" id="authorization-description" name="authorization-description" required>
+                    <label for="authorization-description">Descripción</label>
+                </div>
+                <!-- Botón para generar el código de autorización -->
+                <button class="btn waves-effect red" type="submit">Generar Código</button>
+                <!-- Botón para enviar el código por correo (oculto por defecto) -->
+                <a href="#" id="email-button" class="btn waves-effect blue" style="display: none;">Enviar Código por Correo</a>
+            </form>
+        </div>
+
+        <!-- Sección para administrar códigos de autorización -->
+        <div class="section">
+            <h4>Administrar Código de Autorización</h4>
+            <form id="activate-code-form">
+                <div class="input-field">
+                    <!-- Select para seleccionar un código de autorización -->
+                    <select id="authorization-code-select" name="authorization-code-select" required>
+                        <option value="" disabled selected>Seleccione un código</option>
+                    </select>
+                    <label for="authorization-code-select">Código de Autorización</label>
+                </div>
+                <div class="input-field">
+                    <!-- Select para seleccionar una acción sobre el código de autorización -->
+                    <select id="authorization-action" name="authorization-action" required>
+                        <option value="" disabled selected>Seleccione una acción</option>
+                        <option value="activate_authorization_code">Activar</option>
+                        <option value="deactivate_authorization_code">Desactivar</option>
+                        <option value="delete_authorization_code">Eliminar</option>
+                    </select>
+                    <label for="authorization-action">Acción</label>
+                </div>
+                <!-- Botón para aplicar la acción seleccionada al código de autorización -->
+                <button class="btn waves-effect red" type="submit">Aplicar Acción</button>
+            </form>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 20px;">
+        <!-- Enlace al dashboard -->
+        <a href="admin_dashboard.html" class="btn-flat">DASHBOARD</a>
+    </div>
+
+    <!-- Incluir el archivo JavaScript de Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Incluir el archivo JavaScript personalizado -->
+    <script src="js/department_operator.js"></script>
+</body>
+</html>

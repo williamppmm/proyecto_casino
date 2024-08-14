@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/register.css">
+    <title>Registro</title>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="center-align">Regístrate</h1>
+    <form>
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <select id="documentType" name="documentType" required>
+                    <option value="" disabled selected>*Tipo de documento</option>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                    <option value="CE">Cédula de Extranjería</option>
+                    <option value="PA">Pasaporte</option>
+                </select>
+            </div>
+            <div class="input-field col s12 m6">
+                <input type="text" id="documentNumber" name="documentNumber" required>
+                <label for="documentNumber">*Número de identificación</label>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <input type="text" class="datepicker" id="documentIssueDate" name="documentIssueDate" required>
+                <label for="documentIssueDate">*Fecha de expedición</label>
+            </div>
+            <div class="input-field col s12 m6">
+                <input type="text" id="documentIssuePlace" name="documentIssuePlace" required>
+                <label for="documentIssuePlace">*Lugar de expedición</label>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="firstName">*Primer nombre</label>
+            </div>
+            <div class="input-field col s12 m6">
+                <input type="text" id="secondName" name="secondName">
+                <label for="secondName">Segundo nombre</label>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <input type="text" id="firstSurname" name="firstSurname" required>
+                <label for="firstSurname">*Primer apellido</label>
+            </div>
+            <div class="input-field col s12 m6">
+                <input type="text" id="secondSurname" name="secondSurname">
+                <label for="secondSurname">Segundo apellido</label>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <input type="email" id="email" name="email" required>
+                <label for="email">*Correo electrónico</label>
+            </div>
+            <div class="input-field col s12 m6">
+                <input type="tel" id="mobilePhone" name="mobilePhone" required>
+                <label for="mobilePhone">*Teléfono móvil</label>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="input-field col s12 m6" style="position: relative;">
+                <input type="password" id="password" name="password" required>
+                <label for="password">*Contraseña</label>
+                <span class="toggle-password">
+                    <i class="material-icons" id="toggle-password-icon">visibility_off</i>
+                </span>
+            </div>
+            <div class="input-field col s12 m6" style="position: relative;">
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <label for="confirmPassword">*Confirmar contraseña</label>
+                <span class="toggle-password">
+                    <i class="material-icons" id="toggle-confirm-password-icon">visibility_off</i>
+                </span>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <input type="date" class="datepicker" id="birthdate" name="birthdate" required>
+                <label for="birthdate">*Fecha de nacimiento</label>
+            </div>
+            <div class="input-field col s12 m6">
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>*Género</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                    <option value="F">LGBTIQ+</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="input-field col s12 m6">
+                <select id="nationality" name="nationality" required>
+                    <option value="" disabled selected>*Nacionalidad</option>
+                    <option value="CO">Colombia</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="MX">México</option>
+                </select>
+            </div>
+            <div class="input-field col s12 m6">
+                <input type="text" id="address" name="address" required>
+                <label for="address">*Dirección de residencia</label>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="text" id="municipality" name="municipality" required>
+                <label for="municipality">*Municipio</label>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="input-field col s12">
+                <select id="interdicted" name="interdicted" required>
+                    <option value="" disabled selected>¿Has sido declarado interdicto?</option>
+                    <option value="yes">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="input-field col s12">
+                <select id="pep" name="pep" required>
+                    <option value="" disabled selected>¿Es usted persona expuesta políticamente (PEP)?</option>
+                    <option value="yes">Sí</option>
+                    <option value="no">No</option>
+                </select>
+                <p>Decreto 830 de 2021</p>
+            </div>
+        </div>
+    
+        <div class="row">
+            <label>
+                <input type="checkbox" class="filled-in" id="dataConsent" name="dataConsent" required />
+                <span>Autorizo el tratamiento de mis datos personales.</span>
+            </label>
+        </div>
+    
+        <div class="row">
+            <label>
+                <input type="checkbox" class="filled-in" id="commercialCommunications" name="commercialCommunications" required />
+                <span>Autorizo el envío de comunicaciones comerciales a mis datos de contacto.</span>
+            </label>
+        </div>
+    
+        <div class="row">
+            <label>
+                <input type="checkbox" class="filled-in" id="termsAndConditions" name="termsAndConditions" required />
+                <span>Acepto términos y condiciones de juego, los cuales puedes consultar <a href="terminos_2024.html">aquí</a>.</span>
+            </label>
+        </div>
+    
+        <div class="row">
+            <label>
+                <input type="checkbox" class="filled-in" id="captcha" name="captcha" required />
+                <span>Confirmo que no soy un robot.</span>
+            </label>
+        </div>
+    
+        <div class="row">
+            <div class="col s12 m6">
+                <button class="btn waves-effect red" type="submit" name="action">Completar Registro</button>
+            </div>
+            <div class="col s12 m6">
+                <a href="customer_login.html" class="btn waves-effect red" id="login-button" style="display: none;">Iniciar Sesión</a>
+            </div>
+            
+        </div>
+
+        <div class="row center-align">
+            <p>¿Ya tienes cuenta? <a href="customer_login.html">Inicia sesión</a></p>
+        </div>
+
+    </form>
+</div>
+
+
+<!-- Uso de acción flotante para WhatsApp -->
+<div class="fixed-action-btn">
+    <a href="https://wa.me/573152728882" class="btn-floating btn-large light red darken-1" title="¿Necesitas ayuda?">
+        <img src="icon/WhatsApp.svg" alt="Chat" class="custom-icon">
+    </a>
+</div>
+
+<div style="text-align: center; margin-top: 20px;">
+    <a href="index.html" class="btn-flat">Volver al inicio</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/customer_register.js"></script>
+
+</body>
+</html>

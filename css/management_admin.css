@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+    background-image: url("../img/IMG_006.PNG");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f5f5f5;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Estilos del formulario */
+  #registroMaquinaForm {
+    background-color: rgba(18, 18, 18, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  #registroMaquinaForm label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  #registroMaquinaForm input[type="text"],
+  #registroMaquinaForm input[type="number"],
+  #registroMaquinaForm select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  #registroMaquinaForm button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Estilos de la tabla */
+  #tablaMaquinas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+  
+  #tablaMaquinas th,
+  #tablaMaquinas td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  #tablaMaquinas th {
+    background-color: rgba(18, 18, 18, 0.9);
+    color: #ffffff;
+  }
+  
+  #tablaMaquinas tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  #tablaMaquinas tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Estilos de los botones de acción */
+  .btn-accion {
+    padding: 6px 10px;
+    background-color: red;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .btn-accion:hover {
+    background-color: darkred;
+  }
+  
+  /* Estilos de los enlaces */
+  a {
+    color: #ff5f5f;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ff7f7f;
+  }
