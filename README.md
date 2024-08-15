@@ -1,91 +1,76 @@
-<p align="center">
-  <a href="http://materializecss.com/">
-    <img src="http://materializecss.com/res/materialize.svg" width="150">
-  </a>
-</p>
+# proyecto_casino
+proyecto de aprendizaje, ADSO SENA 2758315, William Pérez Muñoz, Hernan Darío Pérez Higuita, Penélope Noreña Ramos
 
-<h3 align="center">MaterializeCSS</h3>
+Casino La Fortuna
 
-<p align="center">
-  Materialize, a CSS Framework based on material design.
-  <br>
-  <a href="http://materializecss.com/"><strong>-- Browse the docs --</strong></a>
-  <br>
-  <br>
-  <a href="https://travis-ci.org/Dogfalo/materialize">
-    <img src="https://travis-ci.org/Dogfalo/materialize.svg?branch=master" alt="Travis CI badge">
-  </a>
-  <a href="https://badge.fury.io/js/materialize-css">
-    <img src="https://badge.fury.io/js/materialize-css.svg" alt="npm version badge">
-  </a>
-  <a href="https://cdnjs.com/libraries/materialize">
-    <img src="https://img.shields.io/cdnjs/v/materialize.svg" alt="CDNJS version badge">
-  </a>
-  <a href="https://david-dm.org/Dogfalo/materialize">
-    <img src="https://david-dm.org/Dogfalo/materialize/status.svg" alt="dependencies Status badge">
-    </a>
-  <a href="https://david-dm.org/Dogfalo/materialize#info=devDependencies">
-    <img src="https://david-dm.org/Dogfalo/materialize/dev-status.svg" alt="devDependency Status badge">
-  </a>
-  <a href="https://gitter.im/Dogfalo/materialize">
-    <img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter badge">
-  </a>
-</p>
+Descripción del Proyecto
 
-## Table of Contents
-- [Quickstart](#quickstart)
-- [Documentation](#documentation)
-- [Supported Browsers](#supported-browsers)
-- [Changelog](#changelog)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [Copyright and license](#copyright-and-license)
+Casino La Fortuna es un software contable integral diseñado para la gestión financiera y operativa de un casino. Este sistema está desarrollado para manejar la contabilidad diaria de diversas actividades del casino, incluyendo máquinas tragamonedas, apuestas deportivas online y servicios adicionales. El objetivo principal del proyecto es proporcionar una solución unificada que facilite el control, registro y análisis de las transacciones financieras del casino, permitiendo a los administradores tomar decisiones informadas basadas en datos precisos y actualizados.
 
-## Quickstart:
-Read the [getting started guide](http://materializecss.com/getting-started.html) for more information on how to use materialize.
+Funcionalidades Principales
 
-- [Download the latest release](https://github.com/Dogfalo/materialize/releases/latest) of materialize directly from GitHub. ([Beta](https://github.com/Dogfalo/materialize/releases/))
-- Clone the repo: `git clone https://github.com/Dogfalo/materialize.git` (Beta: `git clone -b v1-dev https://github.com/Dogfalo/materialize.git`)
-- Include the files via [cdnjs](https://cdnjs.com/libraries/materialize). More [here](http://materializecss.com/getting-started.html). ([Beta](https://cdnjs.com/libraries/materialize/1.0.0-beta))
-- Install with [npm](https://www.npmjs.com): `npm install materialize-css` (Beta: `npm install materialize-css@next`)
-- Install with [Bower](https://bower.io): `bower install materialize` ([DEPRECATED](https://bower.io/blog/2017/how-to-migrate-away-from-bower/))
-- Install with [Atmosphere](https://atmospherejs.com): `meteor add materialize:materialize` (Beta: `meteor add materialize:materialize@=1.0.0-beta`)
+- Gestión de Máquinas Tragamonedas: Registro y seguimiento de la actividad de cada máquina, incluyendo entradas, salidas, premios mayores y balance.
+- Gestión de Juegos Online: Control y registro de las ganancias y pérdidas diarias generadas por los juegos online.
+- Apuestas Deportivas: Control y registro de las ganancias y pérdidas diarias generadas por las apuestas deportivas.
+- Servicios Adicionales: Gestión de las ventas de servicios adicionales ofrecidos por el casino, como recargas y pines.
+- Gestión de Gastos y Pagos: Registro detallado de todos los gastos operativos del casino, incluyendo nómina, arriendo, y pagos a proveedores.
+- Generación de Informes Financieros: Creación de informes diarios, mensuales y anuales que detallan los ingresos, gastos y beneficios del casino.
+- Control de Inventario: Seguimiento y gestión del inventario relacionado con las actividades de juego y servicios adicionales.
+  
+Tecnologías Utilizadas
 
-## Documentation
-The documentation can be found at <http://materializecss.com>. To run the documentation locally on your machine, you need [Node.js](https://nodejs.org/en/) installed on your computer.
+- Lenguaje de Programación: PHP, JavaScript
+- Base de Datos: MySQL
+- Servidor Web: Apache (XAMPP)
+- Herramientas de Desarrollo: MySQL Workbench, Visual Studio Code
 
-### Running documentation locally
-Run these commands to set up the documentation:
+Requisitos del Sistema
 
-```bash
-git clone https://github.com/Dogfalo/materialize
-cd materialize
-npm install
-```
+- Sistema Operativo: Windows 10 o superior
+- Memoria RAM: 4 GB mínimo
+- Almacenamiento: 500 GB mínimo
+- Otros: Conexión a Internet para la sincronización de datos y copias de seguridad.
 
-Then run `grunt monitor` to compile the documentation. When it finishes, open a new browser window and navigate to `localhost:8000`. We use [BrowserSync](https://www.browsersync.io/) to display the documentation.
+Instalación
 
-### Documentation for previous releases
-Previous releases and their documentation are available for [download](https://github.com/Dogfalo/materialize/releases).
+Clonar el repositorio desde GitHub:
 
-## Supported Browsers:
-Materialize is compatible with:
+git clone https://github.com/usuario/casino-la-fortuna.git
 
-- Chrome 35+
-- Firefox 31+
-- Safari 9+
-- Opera
-- Edge
-- IE 11+
+Configurar el entorno en XAMPP:
 
-## Changelog
-For changelogs, check out [the Releases section of materialize](https://github.com/Dogfalo/materialize/releases) or the [CHANGELOG.md](CHANGELOG.md).
+- Colocar los archivos del proyecto en la carpeta htdocs de XAMPP.
+- Crear la base de datos en MySQL usando el archivo SQL proporcionado en el repositorio.
+- Configurar los archivos de conexión a la base de datos:
+  Editar los archivos de configuración para asegurarse de que apuntan a la base de datos correcta.
+  Iniciar el servidor Apache y MySQL desde el panel de control de XAMPP.
+- Acceder al proyecto desde el navegador en http://localhost/proyecto_casino/
 
-## Testing
-We use Jasmine as our testing framework and we're trying to write a robust test suite for our components. If you want to help, [here's a starting guide on how to write tests in Jasmine](CONTRIBUTING.md#jasmine-testing-guide).
+Uso
 
-## Contributing
-Check out the [CONTRIBUTING document](CONTRIBUTING.md) in the root of the repository to learn how you can contribute. You can also browse the [help-wanted](https://github.com/Dogfalo/materialize/labels/help-wanted) tag in our issue tracker to find things to do.
+Acceso al Sistema
+1. Usuarios: El sistema permite la creación de usuarios con diferentes roles, como operadores, administradores y técnicos.
+2. Gestión de Máquinas: Los operadores pueden ingresar datos relacionados con las máquinas tragamonedas, incluyendo las métricas diarias como COINS IN, COINS OUT, JACKPOTS y YIELD.
+3. Generación de Informes: Los administradores pueden generar informes financieros detallados que resumen las operaciones diarias y mensuales.
 
-## Copyright and license
-Code Copyright 2018 Materialize. Code released under the MIT license.
+Contribuciones
+
+Las contribuciones son bienvenidas. Para contribuir, por favor sigue estos pasos:
+
+1. Haz un fork del proyecto.
+2. Crea una nueva rama (git checkout -b feature-nueva-funcionalidad).
+3. Realiza tus cambios y haz commit (git commit -m "Añadir nueva funcionalidad").
+4. Sube tus cambios (git push origin feature-nueva-funcionalidad).
+5. Abre un Pull Request.
+
+Licencia
+
+- Este proyecto está desarrollado bajo una licencia personalizada con fines educativos. El software desarrollado como parte del proyecto Casino la Fortuna ha sido creado por un grupo de aprendices con el objetivo de adquirir experiencia en el desarrollo de software. Por lo tanto, su uso, distribución y modificación están permitidos únicamente con la autorización explícita de los autores.
+- Si deseas utilizar este software o partes del mismo para propósitos educativos, personales o comerciales, te pedimos que contactes a los autores para obtener el permiso necesario.
+- Este proyecto es compartido bajo los principios de la colaboración y el aprendizaje, y estamos abiertos a contribuir y colaborar con otros en un ambiente educativo.
+
+Contacto
+
+Para más información sobre este proyecto, puedes contactar a:
+
+William Pérez Muñoz- Desarrollador Principal - williamppmm@hotmail.com

@@ -1,0 +1,129 @@
+# Logs de aplicaciones y herramientas que pueden crecer rápidamente y no necesitan ser rastreados por Git
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Informes de diagnóstico generados por Node.js, útiles para depuración, pero no necesarios en el control de versiones
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Datos de tiempo de ejecución, como identificadores de procesos y archivos de bloqueo, que no deben ser rastreados
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directorio generado para bibliotecas instrumentadas por herramientas de cobertura de código como jscoverage/JSCover
+lib-cov
+
+# Directorio de cobertura de pruebas utilizado por herramientas como Istanbul, utilizado para reportes de cobertura de código
+coverage
+*.lcov
+
+# Directorio de salida de cobertura generado por la herramienta de pruebas nyc
+.nyc_output
+
+# Almacenamiento intermedio de Grunt, utilizado durante la ejecución de tareas, no es necesario en el control de versiones
+.grunt
+
+# Directorio de dependencias de Bower, gestor de paquetes obsoleto que no se necesita rastrear
+bower_components
+
+# Configuración de node-waf, una herramienta obsoleta de configuración de scripts de Node.js
+.lock-wscript
+
+# Complementos binarios compilados, generados localmente durante la construcción de módulos nativos
+build/Release
+
+# Directorios de dependencias comunes que no se deben rastrear
+node_modules/
+jspm_packages/
+
+# Directorio de dependencias de Snowpack, una herramienta de construcción moderna
+web_modules/
+
+# Archivos de caché de TypeScript, utilizados para mejorar los tiempos de compilación, no se necesitan en el control de versiones
+*.tsbuildinfo
+
+# Directorio opcional de caché de npm, se utiliza para almacenar paquetes descargados
+.npm
+
+# Archivo de caché opcional de eslint, almacena resultados de análisis para mejorar la velocidad
+.eslintcache
+
+# Archivo de caché opcional de stylelint, similar al anterior pero para el análisis de estilo de CSS
+.stylelintcache
+
+# Caché de Microbundle, utilizado para almacenar resultados de construcción de paquetes
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Historial opcional de la línea de comandos REPL de Node.js
+.node_repl_history
+
+# Salida del comando 'npm pack', que genera un archivo tar comprimido de un paquete npm
+*.tgz
+
+# Archivo de integridad de Yarn, que verifica que las dependencias instaladas coincidan con las especificadas
+.yarn-integrity
+
+# Archivos de variables de entorno de dotenv, utilizados para almacenar configuraciones sensibles, no deben estar en el repositorio
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Directorio de caché de parcel-bundler, una herramienta de empaquetado de aplicaciones web
+.cache
+.parcel-cache
+
+# Salida de construcción de Next.js, un marco para React, que se genera y no necesita ser rastreado
+.next
+out
+
+# Salida de construcción y generación de Nuxt.js, un marco para Vue.js, similar al anterior
+.nuxt
+dist
+
+# Directorios y archivos específicos de Gatsby, un generador de sitios estáticos basado en React
+.cache/
+# Descomentar la siguiente línea si tu proyecto usa Gatsby y no Next.js
+# public
+
+# Salida de construcción de vuepress, una herramienta de generación de documentación
+.vuepress/dist
+
+# Directorios temporales y de caché de vuepress v2.x
+.temp
+.cache
+
+# Archivos generados por Docusaurus, una herramienta de documentación
+.docusaurus
+
+# Directorios utilizados por herramientas serverless, no es necesario rastrearlos
+.serverless/
+
+# Directorio de caché de FuseBox, una herramienta de empaquetado de módulos
+.fusebox/
+
+# Archivos locales de DynamoDB, una base de datos NoSQL, usados para almacenamiento local
+.dynamodb/
+
+# Archivo de puerto de TernJS, una herramienta de análisis estático para JavaScript
+.tern-port
+
+# Almacena versiones de VSCode utilizadas para probar extensiones de VSCode
+.vscode-test
+
+# Directorios de Yarn v2, nueva versión del gestor de paquetes, con un sistema de caché diferente
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
