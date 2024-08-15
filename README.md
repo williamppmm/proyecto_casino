@@ -35,7 +35,7 @@ Instalación
 
 Clonar el repositorio desde GitHub:
 
-git clone https://github.com/usuario/casino-la-fortuna.git
+git clone https://github.com/williamppmm/proyecto_casino
 
 Configurar el entorno en XAMPP:
 
