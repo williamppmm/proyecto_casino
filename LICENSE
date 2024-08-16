@@ -1,21 +1,16 @@
-The MIT License (MIT)
+Licencia Educativa y de Colaboración Abierta (LECA)
+Copyright (c) 2024 William Pérez Muñoz, Hernán Darío Pérez Higuita, Penélope Noreña Ramos
 
-Copyright (c) 2014-2018 Materialize
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use, copy, modify, and distribute the Software for educational and collaborative purposes, provided that the following conditions are met:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Propósito Educativo: El Software y cualquier derivado del mismo deberán ser utilizados únicamente con fines educativos y de aprendizaje. Cualquier uso comercial debe contar con el consentimiento explícito y por escrito de los autores.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Colaboración Abierta: La colaboración de la comunidad de aprendices, estudiantes y particulares es bienvenida. Las contribuciones deben ser realizadas a través de pull requests o mecanismos similares, y estarán sujetas a la revisión y aprobación del equipo creativo del proyecto.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Reconocimiento: Cualquier distribución del Software, modificada o no, debe incluir el presente aviso de derechos de autor, esta lista de condiciones y la siguiente declaración:
+
+"Este software fue desarrollado como parte de un proyecto educativo dentro del programa de formación en Análisis y Desarrollo de Software del SENA. Se invita a la comunidad a colaborar y mejorar este proyecto, siempre con fines educativos."
+
+Informe de Contribuciones: Cualquier contribución significativa o modificación que se haga al Software debe ser informada al grupo creativo original a través de los canales establecidos (por ejemplo, un correo electrónico o una notificación en la plataforma de control de versiones).
+
+Sin Garantías: EL SOFTWARE SE ENTREGA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A LAS GARANTÍAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS AUTORES O LOS TITULARES DEL COPYRIGHT SERÁN RESPONSABLES POR NINGÚN RECLAMO, DAÑOS U OTRAS RESPONSABILIDADES, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO O DE OTRO MODO, QUE SURJAN DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U OTROS TRATOS EN EL SOFTWARE.
