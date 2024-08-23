@@ -1,6 +1,21 @@
 {
+  "name": "proyecto_casino",
+  "version": "1.0.0",
+  "description": "proyecto de aprendizaje, ADSO SENA 2758315, William Pérez Muñoz, Hernan Darío Pérez Higuita, Penélope Noreña Ramos",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "express": "^4.19.2",
+    "mysql2": "^3.11.0",
     "nodemon": "^3.1.4"
-  }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
